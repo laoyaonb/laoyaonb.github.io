@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>第一篇博客</title>
+      <link href="/2023/10/30/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/"/>
+      <url>/2023/10/30/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
+      
+        <content type="html"><![CDATA[<p>#一级标题<br>##二级标题</p><p>标题有1~6级，分别用 # 到 ###### 表示</p><span id="more"></span><hr><p><em>斜体</em>             <em>斜体</em></p><p><strong>粗体</strong></p><p><em><strong>加粗斜体</strong></em></p><p><del>删除线</del></p><blockquote><p>文字引用</p></blockquote><p>这是      <code>//行内代码</code></p><p>这是</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">//多行代码</span><br><span class="line">//多行代码</span><br><span class="line"></span><br></pre></td></tr></table></figure><p>$$<br>y &#x3D; x + 1<br>$$</p><h2 id="下面有三条分割线"><a href="#下面有三条分割线" class="headerlink" title="下面有三条分割线"></a>下面有三条分割线</h2><p>+++</p><hr>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 测试用，过几天会删掉的~ </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hello World</title>
       <link href="/2023/10/29/hello-world/"/>
       <url>/2023/10/29/hello-world/</url>
