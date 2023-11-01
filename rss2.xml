@@ -9,7 +9,7 @@
     <atom:link href="http://mylyn.cn/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Tue, 31 Oct 2023 04:37:24 GMT</pubDate>
+    <pubDate>Wed, 01 Nov 2023 10:20:31 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -24,6 +24,8 @@
       
       <content:encoded><![CDATA[<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><p>标题有1~6级，分别用 # 到 ###### 表示</p><span id="more"></span><hr><p><em>斜体</em>             <em>斜体</em></p><p><strong>粗体</strong></p><p><em><strong>加粗斜体</strong></em></p><p><del>删除线</del></p><blockquote><p>文字引用</p></blockquote><p>这是      <code>//行内代码</code></p><p>这是</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">//多行代码</span><br><span class="line">//多行代码</span><br><span class="line"></span><br></pre></td></tr></table></figure><p>$$<br>y &#x3D; x + 1<br>$$</p><h2 id="下面有三条分割线"><a href="#下面有三条分割线" class="headerlink" title="下面有三条分割线"></a>下面有三条分割线</h2><p>+++</p><hr>]]></content:encoded>
       
+      
+      <category domain="http://mylyn.cn/categories/Others/">Others</category>
       
       
       <category domain="http://mylyn.cn/tags/%E6%B5%8B%E8%AF%95%E7%94%A8%EF%BC%8C%E8%BF%87%E5%87%A0%E5%A4%A9%E4%BC%9A%E5%88%A0%E6%8E%89%E7%9A%84/">测试用，过几天会删掉的~</category>
