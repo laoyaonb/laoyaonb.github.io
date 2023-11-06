@@ -30,9 +30,12 @@
 <meta property="og:description" content="有许多学科，明明是理科，但需要记忆的内容却不少。这样的学科往往令人头疼。而C语言这类的编程语言正是这样。不过相较于物理学习的物理学史，编程语言的需要记忆的内容多为基础知识。也就是说，这些需要记忆的东西正是为后面的深入学习做准备。因此C语言中的基础知识是非常有必要记忆和理解的。 编程&#x2F;计算机通识">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://mylyn.cn/images/%E6%B5%81%E7%A8%8B%E5%9B%BE.webp">
+<meta property="og:image" content="http://mylyn.cn/images/%E5%80%92%E5%8F%96%E4%BD%99%E6%95%B0%E6%B3%95.jpg">
+<meta property="og:image" content="http://mylyn.cn/images/%E5%8D%81%E5%85%AD%E8%BF%9B%E5%88%B6.jpg">
 <meta property="article:published_time" content="2023-11-01T11:02:32.000Z">
-<meta property="article:modified_time" content="2023-11-02T06:55:26.106Z">
+<meta property="article:modified_time" content="2023-11-06T01:21:19.196Z">
 <meta property="article:author" content="lyn">
+<meta property="article:tag" content="c语言复习">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://mylyn.cn/images/%E6%B5%81%E7%A8%8B%E5%9B%BE.webp">
 
@@ -230,7 +233,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2023-11-02 14:55:26" itemprop="dateModified" datetime="2023-11-02T14:55:26+08:00">2023-11-02</time>
+                <time title="修改时间：2023-11-06 09:21:19" itemprop="dateModified" datetime="2023-11-06T09:21:19+08:00">2023-11-06</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -255,14 +258,14 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>551</span>
+              <span>1.8k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
                 <i class="far fa-clock"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 分钟</span>
+              <span>2 分钟</span>
             </span>
 
         </div>
@@ -286,7 +289,26 @@
 
 <h3 id="二、流程图"><a href="#二、流程图" class="headerlink" title="二、流程图"></a>二、流程图</h3><p>直观、易懂<br><img src="/./images/%E6%B5%81%E7%A8%8B%E5%9B%BE.webp" alt="流程图"></p>
 <h3 id="三、计算机语言"><a href="#三、计算机语言" class="headerlink" title="三、计算机语言"></a>三、计算机语言</h3><p>机器语言<br>汇编语言<br><strong>高级语言</strong>（C语言属于这个，其他两类语言做了解即可）</p>
-<h2 id="进制转换"><a href="#进制转换" class="headerlink" title="进制转换"></a>进制转换</h2><hr>
+<h2 id="进制转换"><a href="#进制转换" class="headerlink" title="进制转换"></a>进制转换</h2><p>日常生活使用 <strong>十进制(d&#x2F;D)</strong>, 计算机内部使用 <strong>二进制(b&#x2F;B)</strong>, 人类管理计算机内部的二进制时使用 <strong>十六进制(h&#x2F;H)</strong> 。因此这三种进制是所有进制里最重要的，相互转化是一定要掌握的。</p>
+<h3 id="十进制转二进制（转-k-进制）"><a href="#十进制转二进制（转-k-进制）" class="headerlink" title="十进制转二进制（转 k 进制）"></a>十进制转二进制（转 k 进制）</h3><p>考试的重难点，属于没学过就非常花时间的那种题。（小学现在都开始学二进制的四则运算了，作为大学牲还不会十转二，这合理吗）  </p>
+<h4 id="基本方法：倒取余数法（短除法）"><a href="#基本方法：倒取余数法（短除法）" class="headerlink" title="基本方法：倒取余数法（短除法）"></a>基本方法：<strong>倒取余数法（短除法）</strong></h4><p><img src="/./images/%E5%80%92%E5%8F%96%E4%BD%99%E6%95%B0%E6%B3%95.jpg" alt="倒取余数法"><br>这幅图非常直观，效率也非常高，求解过程中没有思维上的障碍，只要想通为什么能够用这样的方法来计算二进制，就不会忘记这种方法了。转 k 进制只需将除数‘2’换成‘k’就可以了。这同时也是编程中常用的方法。  </p>
+<h4 id="进阶方法：背表（非正式名称）"><a href="#进阶方法：背表（非正式名称）" class="headerlink" title="进阶方法：背表（非正式名称）"></a>进阶方法：<strong>背表（非正式名称）</strong></h4><p>例如：将十进制 29 转化而二进制  </p>
+<ol>
+<li>十进制29介于16与32之间，而我们知道16的二进制是10000,32的二进制是100000，所以结果有五位，第一位是</li>
+<li>29减去16后，继续求剩下的四位。13介于8和16之间，所以介于1000和10000之间，推断出第二位是1  </li>
+<li>剩下的5其实是常用的，可以直接看成101了  </li>
+<li>得出结果 29d &#x3D; 11101b<br>这种方法熟练后比倒取余数法快，本质上是一种迭代或递归的处理思想，将大问题转化为小问题。<br>有些场景下会计算的很快，例如 127d &#x3D; 1111111b 这是因为 128d &#x3D; 10000000b，所以给128的二进制数减去1就能快速得到127的二进制数。<br>同理其实29也可以快速计算：29 &#x3D; 31 - 2； 29d &#x3D; 11111b - 10b &#x3D; 11101b；<br>合理的综合使用方法能够显著地提升计算的速度。</li>
+</ol>
+<h3 id="二进制（k-进制）转十进制"><a href="#二进制（k-进制）转十进制" class="headerlink" title="二进制（k 进制）转十进制"></a>二进制（k 进制）转十进制</h3><p>相比之下，二进制转十进制就容易很多。<br>十进制数 123 本质上也和其他进制一样 1×10^2 + 2×10^1 + 3×10^0 &#x3D; 123d<br>在进制中 像例子中的1 2 3称为<strong>基数</strong>， 10^2 10^1 10^0 称为<strong>位权</strong><br>同理，二进制转十进制的计算方法是一样的<br>例如 11101b &#x3D; 1×2^4 + 1×2^3 + 1×2^2 + 0×2^1 + 1×2^0 &#x3D; 29d<br>k进制同理，不举例。  </p>
+<h3 id="二进制-与-十六进制相互转化"><a href="#二进制-与-十六进制相互转化" class="headerlink" title="二进制 与 十六进制相互转化"></a>二进制 与 十六进制相互转化</h3><p>这是一种特殊的进制转换，因为 16 是 2 的四次方，所以一位十六进制数可以用四位二进制数来完全表示。  </p>
+<h4 id="二转十六"><a href="#二转十六" class="headerlink" title="二转十六"></a>二转十六</h4><p>例如 1110101b<br>1.补齐位数：将二进制数补成 4 的倍数位 01110101b<br>2.转化：0111 是 十六进制里的 7， 0101 是十六进制里的 5；<br>3.拼接：1110101b &#x3D; 75h<br>再来一个例子 101110b<br>1.补齐位数：00101110b<br>2.转化：0010b &#x3D; 2h , 1110b &#x3D; Eh; ( E 是十六进制中的 14 )<br>3.拼接：101110b &#x3D; 2Eh  </p>
+<h4 id="十六转二"><a href="#十六转二" class="headerlink" title="十六转二"></a>十六转二</h4><p>例如 46</p>
+<ol>
+<li>转化(不足四位补齐)：4h &#x3D; 0100b; 6h &#x3D; 0110b;  </li>
+<li>拼接(开头的 0 去掉)：46h &#x3D; 1000110b</li>
+</ol>
+<p>附上二进制对应十六进制表(不要求背)<br><img src="/./images/%E5%8D%81%E5%85%AD%E8%BF%9B%E5%88%B6.jpg" alt="十六进制"></p>
+<hr>
 <h1 id="C语言基础"><a href="#C语言基础" class="headerlink" title="C语言基础"></a>C语言基础</h1><h2 id="基础认识"><a href="#基础认识" class="headerlink" title="基础认识"></a>基础认识</h2><h2 id="标识符"><a href="#标识符" class="headerlink" title="标识符"></a>标识符</h2><h2 id="基本数据类型"><a href="#基本数据类型" class="headerlink" title="基本数据类型"></a>基本数据类型</h2><h2 id="表达式"><a href="#表达式" class="headerlink" title="表达式"></a>表达式</h2>
     </div>
 
@@ -351,6 +373,9 @@
 
 
       <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/c%E8%AF%AD%E8%A8%80%E5%A4%8D%E4%B9%A0/" rel="tag"># c语言复习</a>
+          </div>
 
         
 
@@ -425,7 +450,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%BC%96%E7%A8%8B-%E8%AE%A1%E7%AE%97%E6%9C%BA%E9%80%9A%E8%AF%86"><span class="nav-number">1.</span> <span class="nav-text">编程&#x2F;计算机通识</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AE%97%E6%B3%95%E7%9A%84%E6%A6%82%E5%BF%B5"><span class="nav-number">1.1.</span> <span class="nav-text">算法的概念</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AE%97%E6%B3%95%E7%9A%84%E7%89%B9%E7%82%B9"><span class="nav-number">1.2.</span> <span class="nav-text">算法的特点</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AE%97%E6%B3%95%E7%9A%84%E6%8F%8F%E8%BF%B0"><span class="nav-number">1.3.</span> <span class="nav-text">算法的描述</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%80%E3%80%81%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80"><span class="nav-number">1.3.1.</span> <span class="nav-text">一、自然语言</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BA%8C%E3%80%81%E6%B5%81%E7%A8%8B%E5%9B%BE"><span class="nav-number">1.3.2.</span> <span class="nav-text">二、流程图</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%89%E3%80%81%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%AF%AD%E8%A8%80"><span class="nav-number">1.3.3.</span> <span class="nav-text">三、计算机语言</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BF%9B%E5%88%B6%E8%BD%AC%E6%8D%A2"><span class="nav-number">1.4.</span> <span class="nav-text">进制转换</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#C%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80"><span class="nav-number">2.</span> <span class="nav-text">C语言基础</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9F%BA%E7%A1%80%E8%AE%A4%E8%AF%86"><span class="nav-number">2.1.</span> <span class="nav-text">基础认识</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%A0%87%E8%AF%86%E7%AC%A6"><span class="nav-number">2.2.</span> <span class="nav-text">标识符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B"><span class="nav-number">2.3.</span> <span class="nav-text">基本数据类型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%A1%A8%E8%BE%BE%E5%BC%8F"><span class="nav-number">2.4.</span> <span class="nav-text">表达式</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%BC%96%E7%A8%8B-%E8%AE%A1%E7%AE%97%E6%9C%BA%E9%80%9A%E8%AF%86"><span class="nav-number">1.</span> <span class="nav-text">编程&#x2F;计算机通识</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AE%97%E6%B3%95%E7%9A%84%E6%A6%82%E5%BF%B5"><span class="nav-number">1.1.</span> <span class="nav-text">算法的概念</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AE%97%E6%B3%95%E7%9A%84%E7%89%B9%E7%82%B9"><span class="nav-number">1.2.</span> <span class="nav-text">算法的特点</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AE%97%E6%B3%95%E7%9A%84%E6%8F%8F%E8%BF%B0"><span class="nav-number">1.3.</span> <span class="nav-text">算法的描述</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%80%E3%80%81%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80"><span class="nav-number">1.3.1.</span> <span class="nav-text">一、自然语言</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BA%8C%E3%80%81%E6%B5%81%E7%A8%8B%E5%9B%BE"><span class="nav-number">1.3.2.</span> <span class="nav-text">二、流程图</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%89%E3%80%81%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%AF%AD%E8%A8%80"><span class="nav-number">1.3.3.</span> <span class="nav-text">三、计算机语言</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BF%9B%E5%88%B6%E8%BD%AC%E6%8D%A2"><span class="nav-number">1.4.</span> <span class="nav-text">进制转换</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8D%81%E8%BF%9B%E5%88%B6%E8%BD%AC%E4%BA%8C%E8%BF%9B%E5%88%B6%EF%BC%88%E8%BD%AC-k-%E8%BF%9B%E5%88%B6%EF%BC%89"><span class="nav-number">1.4.1.</span> <span class="nav-text">十进制转二进制（转 k 进制）</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%9F%BA%E6%9C%AC%E6%96%B9%E6%B3%95%EF%BC%9A%E5%80%92%E5%8F%96%E4%BD%99%E6%95%B0%E6%B3%95%EF%BC%88%E7%9F%AD%E9%99%A4%E6%B3%95%EF%BC%89"><span class="nav-number">1.4.1.1.</span> <span class="nav-text">基本方法：倒取余数法（短除法）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%BF%9B%E9%98%B6%E6%96%B9%E6%B3%95%EF%BC%9A%E8%83%8C%E8%A1%A8%EF%BC%88%E9%9D%9E%E6%AD%A3%E5%BC%8F%E5%90%8D%E7%A7%B0%EF%BC%89"><span class="nav-number">1.4.1.2.</span> <span class="nav-text">进阶方法：背表（非正式名称）</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BA%8C%E8%BF%9B%E5%88%B6%EF%BC%88k-%E8%BF%9B%E5%88%B6%EF%BC%89%E8%BD%AC%E5%8D%81%E8%BF%9B%E5%88%B6"><span class="nav-number">1.4.2.</span> <span class="nav-text">二进制（k 进制）转十进制</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BA%8C%E8%BF%9B%E5%88%B6-%E4%B8%8E-%E5%8D%81%E5%85%AD%E8%BF%9B%E5%88%B6%E7%9B%B8%E4%BA%92%E8%BD%AC%E5%8C%96"><span class="nav-number">1.4.3.</span> <span class="nav-text">二进制 与 十六进制相互转化</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%BA%8C%E8%BD%AC%E5%8D%81%E5%85%AD"><span class="nav-number">1.4.3.1.</span> <span class="nav-text">二转十六</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%8D%81%E5%85%AD%E8%BD%AC%E4%BA%8C"><span class="nav-number">1.4.3.2.</span> <span class="nav-text">十六转二</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#C%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80"><span class="nav-number">2.</span> <span class="nav-text">C语言基础</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9F%BA%E7%A1%80%E8%AE%A4%E8%AF%86"><span class="nav-number">2.1.</span> <span class="nav-text">基础认识</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%A0%87%E8%AF%86%E7%AC%A6"><span class="nav-number">2.2.</span> <span class="nav-text">标识符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B"><span class="nav-number">2.3.</span> <span class="nav-text">基本数据类型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%A1%A8%E8%BE%BE%E5%BC%8F"><span class="nav-number">2.4.</span> <span class="nav-text">表达式</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -454,7 +479,7 @@
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-count">2</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -505,19 +530,19 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="站点总字数">1k</span>
+    <span title="站点总字数">2k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">1 分钟</span>
+    <span title="站点阅读时长">2 分钟</span>
 </div>
   <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://mist.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a> 强力驱动
   </div>
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共601字</span>
+  <span class="post-count">博客全站共1.4k字</span>
 </div>
 
 
